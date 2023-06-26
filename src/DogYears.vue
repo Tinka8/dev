@@ -34,7 +34,7 @@ import { ref, computed } from "vue";
 const dogAge = ref("");
 
 
-age = computed(() => {
+const age = computed(() => {
     if (dogAge.value === "") {
         return 0;
     } else if (dogAge.value === 1) {

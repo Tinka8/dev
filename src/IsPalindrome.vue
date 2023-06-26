@@ -1,0 +1,27 @@
+<template>
+    <div>
+        <div class="py-10 text-center">
+            <input v-model="word"
+                class="focus:ring-2 ring-pink-300 ring-inset text-3xl border-2 py-2 px-4 border-indigo-600 rounded-md" />
+        </div>
+        <div v-if="isPalindrome" class="py-10 text-center bg-fuchsia-800 text-white">
+            Slovo je palindrom
+        </div>
+        <div v-else class="py-10 text-center bg-gray-50 text-gray-800">
+            Slovo není palindrom
+        </div>
+    </div>
+</template> 
+
+<script setup>
+import { ref, computed } from "vue";
+
+const word = ref("");
+
+
+const isPalindrome = computed(() => {
+    const reversed = word.value.split("").reverse().join("");
+    return word.value === reversed;
+}, true);
+
+</script>

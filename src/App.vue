@@ -1,12 +1,12 @@
 <template>
-  <div class="bg-blue-300">
-    <div>h1</div>
     <dogyears></dogyears>
-  </div>
+    <isPalindrome></isPalindrome>
+    <faceshape></faceshape>
 </template>
 
 <script setup>
-import DogYears from "./DogYears.vue";
-
+import dogyears from "./DogYears.vue";
+import isPalindrome from "./IsPalindrome.vue";
+import faceshape from "./FaceShape.vue";
 
 </script>
