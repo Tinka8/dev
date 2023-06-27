@@ -6,7 +6,13 @@ export default {
     "./**/*.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'cute-pink': '#FEF2F2',
+        'cute-brown': '#525252',
+        'cute-black': '#0A0A0A',
+      },
+    },
   },
   plugins: [],
 }
