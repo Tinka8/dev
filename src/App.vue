@@ -15,7 +15,7 @@
                         <h2 class="text-3xl">Gymnazium Parovska</h2>
                         <div class="py-8">Aliquam erat volutpat. Phasellus lacinia mauris eu libero sagittis fermentum.
                         </div>
-                        <div class="pb-2 text-sm uppercase text-cute-brown">school, high school, graduated</div>
+                        <div class="text-sm uppercase text-cute-brown">school, high school, graduated</div>
                     </div>
 
                     <div class="relative">
