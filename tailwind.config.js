@@ -6,6 +6,9 @@ export default {
     "./**/*.vue",
   ],
   theme: {
+    fontFamily: {
+      'sans': ['Fira Mono', 'system-ui'],
+    },
     extend: {
       colors: {
         'cute-pink': '#FEF2F2',
