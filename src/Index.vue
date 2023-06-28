@@ -3,10 +3,78 @@
         <div class="w-2/6 h-full mx-auto text-cute-black">
             <div class="flex flex-col">
                 <header class="py-10 text-5xl text-left">
-                    <h1 class="text-black"> tina818</h1>
+                    <h1 class="text-black">tina818</h1>
                 </header>
-
-                <div class="relative flex flex-col pb-10 divide-y-2 divide-black">
+                <!-- videoplayer -->
+                <div class="relative flex flex-col divide-y-2 divide-black">
+                    <div class="py-2 pr-2">
+                        <div class="flex justify-between pb-1 text-sm text-cute-brown">
+                            <div class="uppercase">lab</div>
+                            <div>6/2023</div>
+                        </div>
+                        <h2 class="text-3xl">
+                            <router-link to="/lab/videoplayer">Videoplayer</router-link>
+                        </h2>
+                        <div class="py-8">Aliquam erat volutpat. Phasellus lacinia mauris eu libero sagittis fermentum.
+                        </div>
+                        <div class="text-sm uppercase text-cute-brown">calculator</div>
+                    </div>
+                    <div class="relative"></div>
+                    <div class="w-0.5 bg-black h-[200vh] absolute right-0"></div>
+                </div>
+                <!-- palindrome -->
+                <div class="relative flex flex-col divide-y-2 divide-black">
+                    <div class="py-2 pr-2">
+                        <div class="flex justify-between pb-1 text-sm text-cute-brown">
+                            <div class="uppercase">lab</div>
+                            <div>6/2023</div>
+                        </div>
+                        <h2 class="text-3xl">
+                            <router-link to="/lab/isPalindrome">Palindrome</router-link>
+                        </h2>
+                        <div class="py-8">Aliquam erat volutpat. Phasellus lacinia mauris eu libero sagittis fermentum.
+                        </div>
+                        <div class="text-sm uppercase text-cute-brown">calculator</div>
+                    </div>
+                    <div class="relative"></div>
+                    <div class="w-0.5 bg-black h-[200vh] absolute right-0"></div>
+                </div>
+                <!-- faceshape-->
+                <div class="relative flex flex-col divide-y-2 divide-black">
+                    <div class="py-2 pr-2">
+                        <div class="flex justify-between pb-1 text-sm text-cute-brown">
+                            <div class="uppercase">lab</div>
+                            <div>6/2023</div>
+                        </div>
+                        <h2 class="text-3xl">
+                            <router-link to="/lab/faceshape">Face shape</router-link>
+                        </h2>
+                        <div class="py-8">Aliquam erat volutpat. Phasellus lacinia mauris eu libero sagittis fermentum.
+                        </div>
+                        <div class="text-sm uppercase text-cute-brown">calculator</div>
+                    </div>
+                    <div class="relative"></div>
+                    <div class="w-0.5 bg-black h-[200vh] absolute right-0"></div>
+                </div>
+                <!-- psikovia -->
+                <div class="relative flex flex-col divide-y-2 divide-black">
+                    <div class="py-2 pr-2">
+                        <div class="flex justify-between pb-1 text-sm text-cute-brown">
+                            <div class="uppercase">lab</div>
+                            <div>6/2023</div>
+                        </div>
+                        <h2 class="text-3xl">
+                            <router-link to="/lab/dogyears">Psikovia</router-link>
+                        </h2>
+                        <div class="py-8">Aliquam erat volutpat. Phasellus lacinia mauris eu libero sagittis fermentum.
+                        </div>
+                        <div class="text-sm uppercase text-cute-brown">calculator</div>
+                    </div>
+                    <div class="relative"></div>
+                    <div class="w-0.5 bg-black h-[200vh] absolute right-0"></div>
+                </div>
+                <!-- main -->
+                <div class="relative flex flex-col pb-32 divide-y-2 divide-black">
                     <div class="py-2 pr-2">
                         <div class="flex justify-between pb-1 text-sm text-cute-brown">
                             <div class="uppercase">high school</div>
@@ -26,10 +94,6 @@
                     </div>
                     <div class="w-0.5 bg-black h-[200vh] absolute right-0"></div>
                 </div>
-                <router-link to="/lab/dogyears">psikovia</router-link>
-                <router-link to="/lab/faceshape">face</router-link>
-                <router-link to="/lab/isPalindrome">palindrome</router-link>
-                <router-link to="/lab/videoplayer">videoplayer</router-link>
             </div>
         </div>
     </div>
