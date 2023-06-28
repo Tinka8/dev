@@ -5,7 +5,7 @@
                 <header class="py-10 text-5xl text-left">
                     <h1 class="text-black">> tina818</h1>
                 </header>
-
+           
                 <div class="relative flex flex-col pb-10 divide-y-2 divide-black">
                     <div class="py-2 pr-2">
                         <div class="flex justify-between pb-1 text-sm text-cute-brown">
@@ -18,6 +18,8 @@
                         <div class="text-sm uppercase text-cute-brown">school, high school, graduated</div>
                     </div>
 
+
+
                     <div class="relative">
                         <div class="absolute translate-x-full -translate-y-1/2 -right-4">
                             <!-- wrapper a rok -->
@@ -26,8 +28,27 @@
                         </div>
                     </div>
 
+
+
+                        
+
                     <div class="w-0.5 bg-black h-[200vh] absolute right-0"></div>
+
+
+
+
+
+                    
                 </div>
+
+
+                <router-link to="/lab/dogyears">psikovia</router-link>
+                <router-link to="/lab/faceshape">face</router-link>
+                
+                <router-view />
+
+
+
             </div>
         </div>
     </div>
