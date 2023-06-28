@@ -3,7 +3,7 @@
         <div class="w-2/6 h-full mx-auto text-cute-black">
             <div class="flex flex-col">
                 <header class="py-10 text-5xl text-left">
-                    <h1 class="text-black">> tina818</h1>
+                    <h1 class="text-black"> tina818</h1>
                 </header>
 
                 <div class="relative flex flex-col pb-10 divide-y-2 divide-black">

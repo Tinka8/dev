@@ -1,6 +1,7 @@
 import { createApp } from 'vue';
 import './style.css';
 import App from './App.vue';
+import Index from "./Index.vue";
 
 import { createRouter, createWebHistory } from "vue-router";
 import DogYears from "./DogYears.vue";
