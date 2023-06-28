@@ -11,6 +11,7 @@ h1::after {
     content: "I";
     background: black;
     animation: blink 1s step-end infinite;
+    margin-left: 0.5em;
 }
 
 @keyframes blink {

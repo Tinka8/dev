@@ -28,6 +28,8 @@
                 </div>
                 <router-link to="/lab/dogyears">psikovia</router-link>
                 <router-link to="/lab/faceshape">face</router-link>
+                <router-link to="/lab/isPalindrome">palindrome</router-link>
+                <router-link to="/lab/videoplayer">videoplayer</router-link>
             </div>
         </div>
     </div>
