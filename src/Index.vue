@@ -5,104 +5,61 @@
                 <header class="py-10 text-5xl text-left">
                     <h1 class="text-black">tina818</h1>
                 </header>
-                <!-- videoplayer -->
-                <div class="relative flex flex-col divide-y-2 divide-black">
+                <div class="relative flex flex-col divide-y-2 divide-black" 
+                    v-for="post in data.posts" :key="post.title"
+                >
                     <div class="py-2 pr-2">
                         <div class="flex justify-between pb-1 text-sm text-cute-brown">
-                            <div class="uppercase">lab</div>
-                            <div>6/2023</div>
+                            <div class="uppercase">{{ post.type }}</div>
+                            <div>
+                                <span v-for="info in post.info" :key="info">
+                                    {{ info }}
+                                </span>
+                            </div>
                         </div>
                         <h2 class="text-3xl">
-                            <router-link to="/lab/videoplayer">Videoplayer</router-link>
+                            <router-link :to="post.url" v-if="post.url">{{ post.title }}</router-link>
+                            <span v-else>
+                                {{ post.title }}
+                            </span>
                         </h2>
-                        <div class="py-8">Aliquam erat volutpat. Phasellus lacinia mauris eu libero sagittis fermentum.
+                        <div class="py-8">
+                            {{ post.content }}
                         </div>
-                        <div class="text-sm uppercase text-cute-brown">calculator</div>
+                        <div class="text-sm uppercase text-cute-brown">
+                            <span v-for="tag in post.tags" :key="tag">
+                                {{ tag }}
+                            </span>
+                        </div>
                     </div>
                     <div class="relative"></div>
                     <div class="w-0.5 bg-black h-[200vh] absolute right-0"></div>
                 </div>
-                <!-- palindrome -->
-                <div class="relative flex flex-col divide-y-2 divide-black">
-                    <div class="py-2 pr-2">
-                        <div class="flex justify-between pb-1 text-sm text-cute-brown">
-                            <div class="uppercase">lab</div>
-                            <div>6/2023</div>
-                        </div>
-                        <h2 class="text-3xl">
-                            <router-link to="/lab/isPalindrome">Palindrome</router-link>
-                        </h2>
-                        <div class="py-8">Aliquam erat volutpat. Phasellus lacinia mauris eu libero sagittis fermentum.
-                        </div>
-                        <div class="text-sm uppercase text-cute-brown">calculator</div>
+                <div class="relative">
+                    <div class="absolute translate-x-full -translate-y-3/4 -right-4">
+                        <!-- rok -->
+                        <div class="h-3/4"></div>
+                        <div class="text-3xl">2023</div>
                     </div>
-                    <div class="relative"></div>
-                    <div class="w-0.5 bg-black h-[200vh] absolute right-0"></div>
                 </div>
-                <!-- faceshape-->
-                <div class="relative flex flex-col divide-y-2 divide-black">
-                    <div class="py-2 pr-2">
-                        <div class="flex justify-between pb-1 text-sm text-cute-brown">
-                            <div class="uppercase">lab</div>
-                            <div>6/2023</div>
-                        </div>
-                        <h2 class="text-3xl">
-                            <router-link to="/lab/faceshape">Face shape</router-link>
-                        </h2>
-                        <div class="py-8">Aliquam erat volutpat. Phasellus lacinia mauris eu libero sagittis fermentum.
-                        </div>
-                        <div class="text-sm uppercase text-cute-brown">calculator</div>
-                    </div>
-                    <div class="relative"></div>
-                    <div class="w-0.5 bg-black h-[200vh] absolute right-0"></div>
-                </div>
-                <!-- psikovia -->
-                <div class="relative flex flex-col divide-y-2 divide-black">
-                    <div class="py-2 pr-2">
-                        <div class="flex justify-between pb-1 text-sm text-cute-brown">
-                            <div class="uppercase">lab</div>
-                            <div>6/2023</div>
-                        </div>
-                        <h2 class="text-3xl">
-                            <router-link to="/lab/dogyears">Psikovia</router-link>
-                        </h2>
-                        <div class="py-8">Aliquam erat volutpat. Phasellus lacinia mauris eu libero sagittis fermentum.
-                        </div>
-                        <div class="text-sm uppercase text-cute-brown">calculator</div>
-                    </div>
-                    <div class="relative"></div>
-                    <div class="w-0.5 bg-black h-[200vh] absolute right-0"></div>
-                </div>
-                <!-- main -->
-                <div class="relative flex flex-col pb-32 divide-y-2 divide-black">
-                    <div class="py-2 pr-2">
-                        <div class="flex justify-between pb-1 text-sm text-cute-brown">
-                            <div class="uppercase">high school</div>
-                            <div>2019-2023 ⬩ N 48.311° / E 18.082°</div>
-                        </div>
-                        <h2 class="text-3xl">Gymnazium Parovska</h2>
-                        <div class="py-8">Aliquam erat volutpat. Phasellus lacinia mauris eu libero sagittis fermentum.
-                        </div>
-                        <div class="text-sm uppercase text-cute-brown">school, high school, graduated</div>
-                    </div>
-                    <div class="relative">
-                        <div class="absolute translate-x-full -translate-y-1/2 -right-4">
-                            <!-- wrapper a rok -->
-                            <div class="h-3/4"></div>
-                            <div class="text-3xl">2023</div>
-                        </div>
-                    </div>
-                    <div class="w-0.5 bg-black h-[200vh] absolute right-0"></div>
-                </div>
+                <div class="pb-32"></div>      
             </div>
         </div>
     </div>
 </template>
 
 <script setup>
-import dogyears from "./DogYears.vue";
-import isPalindrome from "./IsPalindrome.vue";
-import faceshape from "./FaceShape.vue";
-import videoplayer from "./Videoplayer.vue";
+import { ref } from 'vue';
+import axios from 'axios';
+
+const data = ref({
+    "posts": [
+       
+    ]
+});
+
+axios.get('http://localhost:3000/posts').then((response) => {
+    data.value.posts = response.data;
+});
 
 </script>

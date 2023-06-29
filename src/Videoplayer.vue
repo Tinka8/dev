@@ -1,23 +1,3 @@
-<script setup>
-import { onMounted, ref } from 'vue';
-import { useMediaControls } from '@vueuse/core';
-
-const video = ref()
-const { playing, currentTime, duration, volume, muted } = useMediaControls(video, {
-    src: 'https://upload.wikimedia.org/wikipedia/commons/transcoded/f/f1/Sintel_movie_4K.webm/Sintel_movie_4K.webm.1080p.vp9.webm',
-})
-
-
-function formatDuration(seconds) {
-    return new Date(1000 * seconds).toISOString().slice(14, 19)
-}
-
-onMounted(() => {
-    volume.value = 0.5
-    currentTime.value = 60
-})
-</script>
-
 <template>
     <div class="bg-black w-full h-full min-h-screen">
         <div class="w-3/4 m-auto p-10">
@@ -74,7 +54,28 @@ onMounted(() => {
                     <div>current {{ currentTime }}</div>
                     <div>duration {{ duration }}</div>
 
+                </div>
             </div>
         </div>
     </div>
-</div></template>
+</template>
+
+<script setup>
+import { onMounted, ref } from 'vue';
+import { useMediaControls } from '@vueuse/core';
+
+const video = ref()
+const { playing, currentTime, duration, volume, muted } = useMediaControls(video, {
+    src: 'https://upload.wikimedia.org/wikipedia/commons/transcoded/f/f1/Sintel_movie_4K.webm/Sintel_movie_4K.webm.1080p.vp9.webm',
+})
+
+
+function formatDuration(seconds) {
+    return new Date(1000 * seconds).toISOString().slice(14, 19)
+}
+
+onMounted(() => {
+    volume.value = 0.5
+    currentTime.value = 60
+})
+</script>

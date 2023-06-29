@@ -1,0 +1,36 @@
+{
+    "posts": [
+        {
+            "type": "lab",
+            "info": ["6/2023"],
+            "title": "Videoplayer",
+            "content": "Aliquam erat volutpat. Phasellus lacinia mauris eu libero sagittis fermentum.",
+            "tags": ["Calculator"],
+            "url": "/lab/videoplayer"
+        },
+        {
+            "type": "lab",
+            "info": ["6/2023"],
+            "title": "Palindrome",
+            "content": "Aliquam erat volutpat. Phasellus lacinia mauris eu libero sagittis fermentum.",
+            "tags": ["Calculator"],
+            "url": "/lab/isPalindrome"
+        },
+        {
+            "type": "lab",
+            "info": ["6/2023"],
+            "title": "Psikovia",
+            "content": "Aliquam erat volutpat. Phasellus lacinia mauris eu libero sagittis fermentum.",
+            "tags": ["Calculator"],
+            "url": "/lab/dogyears"
+        },
+        {
+            "type": "high school",
+            "info": ["2019-2023 ⬩ N 48.311° / E 18.082°"],
+            "title": "Gymnazium Parovska",
+            "content": "Aliquam erat volutpat. Phasellus lacinia mauris eu libero sagittis fermentum.",
+            "tags": ["school, high school, graduated"],
+            "url": false
+        }
+    ]
+}
