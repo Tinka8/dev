@@ -1,15 +1,15 @@
 <template>
-    <div class="w-full min-h-screen pt-20 sm:pt-10 overflow-hidden bg-cute-pink">
-        <div class="w-2/6 sm:w-1/2 h-full mx-auto text-cute-black">
+    <div class="w-full min-h-screen pt-20 sm:pt-10 xs:pt-2 overflow-hidden bg-cute-pink">
+        <div class="w-2/6 sm:w-1/2 xs:w-2/3 h-full mx-auto text-cute-black">
             <div class="flex flex-col">
-                <header class="py-10 sm:py-8 text-5xl sm:text-3xl text-left">
+                <header class="py-10 sm:py-8 text-5xl sm:text-3xl xs:text-2xl text-left">
                     <h1>tina818</h1>
                 </header>
                 <div class="relative flex flex-col divide-y-2 divide-black" 
                     v-for="post in data.posts" :key="post.title"
                 >
-                    <div class="py-2 pr-2">
-                        <div class="flex justify-between pb-1 text-sm sm:text-xs text-cute-brown">
+                    <div class="py-2 pr-2 xs:pr-1">
+                        <div class="flex justify-between pb-1 text-sm sm:text-xs xs:text-xxs text-cute-brown">
                             <div class="uppercase">{{ post.type }}</div>
                             <div>
                                 <span v-for="info in post.info" :key="info">
@@ -17,16 +17,16 @@
                                 </span>
                             </div>
                         </div>
-                        <h2 class="text-3xl sm:text-2xl sm:pt-2">
+                        <h2 class="text-3xl sm:text-2xl sm:pt-2 xs:pt-1">
                             <router-link :to="post.url" v-if="post.url">{{ post.title }}</router-link>
                             <span v-else>
                                 {{ post.title }}
                             </span>
                         </h2>
-                        <div class="py-8 sm:py-6 sm:text-sm">
+                        <div class="py-8 sm:py-6 sm:text-sm xs:py-4 xs:text-xs">
                             {{ post.content }}
                         </div>
-                        <div class="text-sm sm:text-xs uppercase text-cute-brown">
+                        <div class="text-sm sm:text-xs xs:text-xxs uppercase text-cute-brown">
                             <span v-for="tag in post.tags" :key="tag">
                                 {{ tag }}
                             </span>
@@ -39,10 +39,10 @@
                     <div class="absolute translate-x-full -translate-y-3/4 -right-4">
                         <!-- rok -->
                         <div class="h-3/4"></div>
-                        <div class="text-3xl sm:text-xl">2023</div>
+                        <div class="text-3xl sm:text-xl xs:text-lg">2023</div>
                     </div>
                 </div>
-                <div class="pb-32 sm:pb-16"></div>      
+                <div class="pb-32 sm:pb-16 xs:pb-10"></div>      
             </div>
         </div>
     </div>

@@ -12,6 +12,12 @@ h1::before {
     }
 }
 
+@media (min-width: 375px) {
+    h1::before {
+        padding-right: 0.1em;
+    }
+}
+
 h1::after {
     content: "I";
     background: black;
