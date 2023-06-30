@@ -1,13 +1,10 @@
 <template>
     <div class="bg-black w-full h-full min-h-screen">
-        <div class="w-3/4 m-auto p-10">
+        <div class="w-3/4 sm:w-full m-auto p-10">
             <div @keydown.prevent.space="playing = !playing" @keydown.right="currentTime += 10"
                 @keydown.left="currentTime -= 10">
 
-
                 <video ref="video"></video>
-
-
 
                 <div class="space-x-2 pt-1 flex items-center">
                     <button @click="playing = !playing"

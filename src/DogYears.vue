@@ -1,9 +1,9 @@
 
 <template>
-    <div class="w-full h-full min-h-screen p-12 bg-gray-200">
-        <div class="container mx-auto w-1/4 bg-white rounded shadow-md">
-            <div class="flex space-x-4">
-                <div>
+    <div class="w-full h-full min-h-screen p-12 sm:p-0 bg-gray-200">
+        <div class="w-1/4 sm:w-3/5 sm:relative">
+            <div class="flex space-x-4 container mx-auto sm:absolute sm:translate-x-40 sm:translate-y-full bg-white rounded shadow-md">
+                <div class="">
                     <div v-if="age < 18">
                         <img src="https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2023/02/23142013/Alaskan-Malamute-puppy-laying-down-outdoors.jpg"
                             alt="puppy" width="200" height="200" class="rounded-s-lg" />

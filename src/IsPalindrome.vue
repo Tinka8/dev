@@ -1,14 +1,16 @@
 <template>
-    <div>
-        <div class="py-10 text-center">
-            <input v-model="word"
-                class="focus:ring-2 ring-pink-300 ring-inset text-3xl border-2 py-2 px-4 border-indigo-600 rounded-md" />
-        </div>
-        <div v-if="isPalindrome" class="py-10 text-center bg-fuchsia-800 text-white">
-            Slovo je palindrom
-        </div>
-        <div v-else class="py-10 text-center bg-gray-50 text-gray-800">
-            Slovo není palindrom
+    <div class="sm:relative">
+        <div class="sm:absolute sm:w-full sm:translate-y-3/4">
+            <div class="py-10 text-center">
+                <input v-model="word"
+                    class="focus:ring-2 ring-pink-300 ring-inset text-3xl border-2 py-2 px-4 border-indigo-600 rounded-md" />
+            </div>
+            <div v-if="isPalindrome" class="py-10 text-center bg-fuchsia-800 text-white">
+                Slovo je palindrom
+            </div>
+            <div v-else class="py-10 text-center bg-gray-50 text-gray-800">
+                Slovo není palindrom
+            </div>
         </div>
     </div>
 </template> 
