@@ -1,6 +1,6 @@
 <template>
     <div class="w-full h-full min-h-screen p-12">
-        <div class="container p-6 w-1/4 m-12 mx-auto bg-blue-200 shadow-lg rounded space-y-2">
+        <div class="container p-6 w-1/4 sm:w-3/4 m-12 mx-auto bg-blue-200 shadow-lg rounded space-y-2">
             <div class="text-gray-700">
                 <ul class="space-y-2">
                     <li class="flex justify-between text-2xl text-black pb-6">Face Shape Calculator</li>
