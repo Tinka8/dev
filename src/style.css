@@ -4,7 +4,12 @@
 
 h1::before {
     content: "\003E";
-    
+}
+
+@media (min-width: 640px) {
+    h1::before {
+        padding-right: 0.3em;
+    }
 }
 
 h1::after {
