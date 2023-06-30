@@ -17,7 +17,7 @@
                                 </span>
                             </div>
                         </div>
-                        <h2 class="text-3xl sm:text-2xl sm:pt-2 xs:pt-1">
+                        <h2 class="text-3xl sm:text-2xl sm:pt-2 xs:pt-1 xs:text-lg">
                             <router-link :to="post.url" v-if="post.url">{{ post.title }}</router-link>
                             <span v-else>
                                 {{ post.title }}
@@ -39,7 +39,7 @@
                     <div class="absolute translate-x-full -translate-y-3/4 -right-4">
                         <!-- rok -->
                         <div class="h-3/4"></div>
-                        <div class="text-3xl sm:text-xl xs:text-lg">2023</div>
+                        <div class="text-3xl sm:text-xl xs:text-base">2023</div>
                     </div>
                 </div>
                 <div class="pb-32 sm:pb-16 xs:pb-10"></div>      

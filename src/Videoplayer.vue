@@ -1,6 +1,6 @@
 <template>
     <div class="bg-black w-full h-full min-h-screen">
-        <div class="w-3/4 sm:w-full m-auto p-10">
+        <div class="w-3/4 sm:w-full xs:w-full xs:p-4 m-auto p-10">
             <div @keydown.prevent.space="playing = !playing" @keydown.right="currentTime += 10"
                 @keydown.left="currentTime -= 10">
 
@@ -42,7 +42,7 @@
                         </div>
                     </button>
 
-                    <div class="text-sm ml-2 text-white">
+                    <div class="text-sm ml-2 text-white xs:text-xs">
                         {{ formatDuration(currentTime) }} / {{ formatDuration(duration) }}
                     </div>
 

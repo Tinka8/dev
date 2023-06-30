@@ -1,9 +1,9 @@
 <template>
-    <div class="w-full h-full min-h-screen p-12">
-        <div class="container p-6 w-1/4 sm:w-3/4 m-12 mx-auto bg-blue-200 shadow-lg rounded space-y-2">
-            <div class="text-gray-700">
-                <ul class="space-y-2">
-                    <li class="flex justify-between text-2xl text-black pb-6">Face Shape Calculator</li>
+    <div class="w-full h-full min-h-screen p-12 xs:p-4">
+        <div class="container p-6 w-1/4 sm:w-3/4 xs:w-auto xs:m-0 xs:p-2 m-12 mx-auto bg-blue-200 shadow-lg rounded space-y-2">
+            <div class="text-gray-700 xs:text-sm">
+                <ul class="space-y-2 xs:space-y-1">
+                    <li class="flex justify-between text-2xl xs:text-xl text-black pb-6">Face Shape Calculator</li>
                     <li class="flex justify-between">
                         <div>Gender</div>
                         <select v-model="gender" id="gender" name="gender" class="rounded text-blue-400 px-2 text-center">
@@ -26,53 +26,53 @@
                                 width="500" height="200" />
                         </div>
                     </li>
-                    <li class="flex justify-between text-xl text-black pb-2">Face measurements</li>
+                    <li class="flex justify-between text-xl xs:text-lg text-black pb-2">Face measurements</li>
                     <li class="flex justify-between items-center">
                         <div class="w-64">Forehead width</div>
                         <input v-model="foreheadWidth" type="number" placeholder="15" class="rounded text-right bg-blue-200 outline-none"/>
-                        <select v-model="inch" class="rounded text-center text-blue-400 ">
+                        <select v-model="inch" class="rounded text-center text-blue-400 xs:h-6">
                             <option disabled value="" id="default">cm</option>
                             <option value="cm">cm</option>
                             <option value="inch">inch</option>
                         </select>
                     </li>
-                    <li class="flex justify-between">
+                    <li class="flex justify-between xs:items-center">
                         <div class="w-64">Cheeks width</div>
                         <input v-model="cheeksWidth" type="number" placeholder="15" class="rounded text-right bg-blue-200 outline-none"/>
-                        <select v-model="inch" class="rounded text-center text-blue-400 ">
+                        <select v-model="inch" class="rounded text-center text-blue-400 xs:h-6">
                             <option disabled value="" id="default">cm</option>
                             <option value="cm">cm</option>
                             <option value="inch">inch</option>
                         </select>
                     </li>
-                    <li class="flex justify-between">
+                    <li class="flex justify-between xs:items-center">
                         <div class="w-64">Jawline length</div>
                         <input v-model="jawlineLength" type="number" placeholder="15" class="rounded text-right bg-blue-200 outline-none"/>
-                        <select v-model="inch" class="rounded text-center text-blue-400 ">
+                        <select v-model="inch" class="rounded text-center text-blue-400 xs:h-6">
                             <option disabled value="" id="default">cm</option>
                             <option value="cm">cm</option>
                             <option value="inch">inch</option>
                         </select>
                     </li>
-                    <li class="flex justify-between">
+                    <li class="flex justify-between xs:items-center">
                         <div class="w-64">Face length</div>
                         <input v-model="faceLength" type="number" placeholder="15" class="rounded text-right bg-blue-200 outline-none"/>
-                        <select v-model="inch" class="rounded text-center text-blue-400 ">
+                        <select v-model="inch" class="rounded text-center text-blue-400 xs:h-6">
                             <option disabled value="" id="default">cm</option>
                             <option value="cm">cm</option>
                             <option value="inch">inch</option>
                         </select>
                     </li>
-                    <li class="flex justify-between space-x-2 pt-2">
+                    <li class="flex justify-between space-x-2 pt-2 xs:items-center">
                         <label>How sharp are your features?</label>
-                        <select v-model="features" id="features" class="rounded text-center px-2 text-blue-400">
+                        <select v-model="features" id="features" class="rounded text-center px-2 text-blue-400 xs:h-6">
                             <option disabled value="" id="default2">Please Select</option>
                             <option value="sharp" id="sharp">Sharp</option>
                             <option value="somewhat" id="somewhat">Somewhat</option>
                             <option value="round" id="round">Round</option>
                         </select>
                     </li>
-                    <li class="flex justify-between pt-6 font-semibold text-black">
+                    <li class="flex justify-between pt-6 xs:pb-2 font-semibold text-black">
                         <div v-show="resultShow">{{ result }}</div>
                     </li>
                 </ul>

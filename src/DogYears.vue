@@ -1,8 +1,8 @@
 
 <template>
-    <div class="w-full h-full min-h-screen p-12 sm:p-0 bg-gray-200">
-        <div class="w-1/4 sm:w-3/5 sm:relative">
-            <div class="flex space-x-4 container mx-auto sm:absolute sm:translate-x-40 sm:translate-y-full bg-white rounded shadow-md">
+    <div class="w-full h-full min-h-screen p-12 sm:p-0 xs:p-0 bg-gray-200">
+        <div class="w-1/4 sm:w-3/5 sm:relative xs:w-screen">
+            <div class="flex space-x-4 container mx-auto sm:absolute sm:translate-x-40 sm:translate-y-full xs:absolute xs:-translate-x-2 xs:translate-y-full xs:-right-2 bg-white rounded shadow-md">
                 <div class="">
                     <div v-if="age < 18">
                         <img src="https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2023/02/23142013/Alaskan-Malamute-puppy-laying-down-outdoors.jpg"
@@ -17,10 +17,10 @@
                             alt="senior doggy" width="200" height="200" class="rounded-s-lg" />
                     </div>
                 </div>
-                <div class="py-2 space-y-2">
+                <div class="py-2 space-y-2 xs:p-0 xs:space-y-0">
                     <div>Vek psa</div>
                     <input v-model="dogAge" type="number" min="1" max="50" placeholder="1"
-                        class="border rounded w-24 px-2" />
+                        class="border rounded w-24 px-2 xs:w-16" />
                     <div class="pt-4">Ludsky vek: <span class="font-bold">{{ age }} rokov</span></div>
                 </div>
             </div>
