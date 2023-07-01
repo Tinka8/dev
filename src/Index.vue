@@ -60,7 +60,7 @@ axios.get('http://localhost:3000/posts').then((response) => {
     data.value.posts = response.data;
 });
 
-axios.get("http://tina.rozklad.dev/api").then((response) => {
+axios.get("https://tina.rozklad.dev/api").then((response) => {
     data.value.posts = response.data.posts;
 });
 
