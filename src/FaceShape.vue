@@ -1,9 +1,9 @@
 <template>
-    <div class="w-full h-full min-h-screen p-12 xs:p-4">
-        <div class="container p-6 w-1/4 sm:w-3/4 xs:w-auto xs:m-0 xs:p-2 m-12 mx-auto bg-blue-200 shadow-lg rounded space-y-2">
-            <div class="text-gray-700 xs:text-sm">
-                <ul class="space-y-2 xs:space-y-1">
-                    <li class="flex justify-between text-2xl xs:text-xl text-black pb-6">Face Shape Calculator</li>
+    <div class="w-full h-full min-h-screen sm:p-12 xs:p-4">
+        <div class="container bg-blue-200 shadow-lg rounded space-y-2 m-12 md:mx-auto md:w-1/4 sm:p-6 sm:w-3/4 xs:w-auto xs:m-0 xs:p-2">
+            <div class="text-gray-700 sm:text-base xs:text-sm">
+                <ul class="sm:space-y-2 xs:space-y-1">
+                    <li class="flex justify-between text-black pb-6 sm:text-2xl xs:text-xl">Face Shape Calculator</li>
                     <li class="flex justify-between">
                         <div>Gender</div>
                         <select v-model="gender" id="gender" name="gender" class="rounded text-blue-400 px-2 text-center">
@@ -65,14 +65,14 @@
                     </li>
                     <li class="flex justify-between space-x-2 pt-2 xs:items-center">
                         <label>How sharp are your features?</label>
-                        <select v-model="features" id="features" class="rounded text-center px-2 text-blue-400 xs:h-6">
+                        <select v-model="features" id="features" class="rounded text-center px-2 text-blue-400 md:h-8 xs:h-6">
                             <option disabled value="" id="default2">Please Select</option>
                             <option value="sharp" id="sharp">Sharp</option>
                             <option value="somewhat" id="somewhat">Somewhat</option>
                             <option value="round" id="round">Round</option>
                         </select>
                     </li>
-                    <li class="flex justify-between pt-6 xs:pb-2 font-semibold text-black">
+                    <li class="flex justify-between font-semibold text-black sm:pt-6 xs:pb-2">
                         <div v-show="resultShow">{{ result }}</div>
                     </li>
                 </ul>
