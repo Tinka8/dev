@@ -1,8 +1,10 @@
 <template>
     <div class="bg-black w-full h-full min-h-screen">
         <div class="md:w-3/4 sm:w-full xs:w-full xs:p-4 m-auto sm:p-10">
-            <div @keydown.prevent.space="playing = !playing" @keydown.right="currentTime += 10"
-                @keydown.left="currentTime -= 10">
+            <div @keydown.prevent.space="playing = !playing" 
+                 @keydown.right="currentTime += 10"
+                 @keydown.left="currentTime -= 10"
+            >
 
                 <video ref="video"></video>
 
@@ -25,7 +27,9 @@
                     </button>
 
 
-                    <button @click="muted = !muted" class="bg-green-700 hover:bg-green-600 rounded px-4 py-1 text-white">
+                    <button @click="muted = !muted" 
+                            class="bg-green-700 hover:bg-green-600 rounded px-4 py-1 text-white"
+                    >
                         <div v-if="muted">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="w-5 h-5">
