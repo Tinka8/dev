@@ -1,3 +1,8 @@
+<form action="./">
+   <input name="pocet">
+   <button type="submit">Odeslat</button>
+</form>
+
 <?php
 
 $lines = $_GET['pocet'];
