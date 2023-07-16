@@ -1,6 +1,6 @@
 <template>
-    <div class="w-full min-h-screen overflow-hidden bg-cute-pink md:pt-20 sm:pt-10 xs:pt-2">
-        <div class="text-cute-black md:w-2/6 md:h-full md:mx-auto sm:w-1/2 xs:w-2/3">
+    <div class="w-full min-h-screen overflow-hidden bg-cute-pink md:pt-14 sm:pt-10 xs:pt-6">
+        <div class="text-cute-black md:w-2/6 md:h-full xs:mx-auto sm:w-1/2 xs:w-2/3">
             <div class="flex flex-col">
                 <header class="md:py-10 md:text-5xl md:text-left sm:py-8 sm:text-3xl xs:text-2xl">
                     <h1>tina818</h1>
@@ -42,7 +42,7 @@
                         <div class="md:text-3xl sm:text-xl xs:text-base">2023</div>
                     </div>
                 </div>
-                <div class="md:pb-32 sm:pb-16 xs:pb-10"></div>      
+                <div class="md:pb-24 sm:pb-16 xs:pb-10"></div>      
             </div>
         </div>
     </div>
@@ -60,7 +60,7 @@ axios.get('http://localhost:3000/posts').then((response) => {
     data.value.posts = response.data;
 });
 
-axios.get("https://tina.rozklad.dev/api").then((response) => {
+axios.get("http://dev.test/api").then((response) => {
     data.value.posts = response.data.posts;
 });
 
